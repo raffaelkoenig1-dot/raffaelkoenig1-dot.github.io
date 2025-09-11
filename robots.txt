@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.raffael-koenig.com/sitemap.xml
