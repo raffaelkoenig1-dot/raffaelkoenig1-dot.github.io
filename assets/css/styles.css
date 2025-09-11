@@ -1,0 +1,5 @@
+
+:root { --ring: 0 0% 9%; }
+* { box-sizing: border-box; }
+a { text-underline-offset: 2px; }
+.container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
