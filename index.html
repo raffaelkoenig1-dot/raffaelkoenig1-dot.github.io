@@ -127,31 +127,38 @@
 
 </main>
 <footer class="border-t bg-white">
-  <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 items-start">
-    <div>
-      <div class="font-semibold">Kontakt</div>
-      <div class="mt-2">Telefon: <a class="underline" href="tel:+491605467002">+49 (0)160 5467002</a></div>
-      <div>E-Mail: <a class="underline" href="mailto:raffaelkoenig1@gmail.com">raffaelkoenig1@gmail.com</a></div>
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <!-- top: three columns -->
+    <div class="grid gap-8 md:grid-cols-3">
+      <section aria-labelledby="footer-kontakt">
+        <h2 id="footer-kontakt" class="font-semibold">Kontakt</h2>
+        <p class="mt-2">Telefon: <a class="underline" href="tel:+491605467002">+49 (0)160 5467002</a></p>
+        <p>E-Mail: <a class="underline" href="mailto:raffaelkoenig1@gmail.com">raffaelkoenig1@gmail.com</a></p>
+      </section>
+
+      <section aria-labelledby="footer-folgen">
+        <h2 id="footer-folgen" class="font-semibold">Folgen</h2>
+        <ul class="mt-2 space-y-1">
+          <li><a class="underline" href="https://www.facebook.com/ralf.honich" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a class="underline" href="https://www.instagram.com/raffael_koenig/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-recht">
+        <h2 id="footer-recht" class="font-semibold">Rechtliches</h2>
+        <ul class="mt-2 space-y-1">
+          <li><a class="underline" href="/impressum.html">Impressum</a></li>
+          <li><a class="underline" href="/datenschutzerklaerung.html">Datenschutzerklärung</a></li>
+        </ul>
+      </section>
     </div>
 
-    <div>
-      <div class="font-semibold">Folgen</div>
-      <div><a class="underline" href="https://www.facebook.com/ralf.honich" target="_blank" rel="noopener">Facebook</a></div>
-      <div><a class="underline" href="https://www.instagram.com/raffael_koenig/" target="_blank" rel="noopener">Instagram</a></div>
-    </div>
-    <div>
-        <div class="mt-6">
-        <div class="font-semibold">Rechtliches</div>
-        <div><a class="underline" href="/impressum.html">Impressum</a></div>
-        <div><a class="underline" href="/datenschutzerklaerung.html">Datenschutzerklärung</a></div>
-        </div>
-    </div>
-
-    <div class="text-sm text-zinc-500">
-      © 2025 Raffael König<br/>
+    <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-zinc-500">
+      <p>© 2025 Raffael König</p>
     </div>
   </div>
 </footer>
+
 
 <script src="/assets/js/main.js"></script>
 </body>
