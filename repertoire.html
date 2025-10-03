@@ -41,6 +41,36 @@
   <link rel="canonical" href="https://www.raffael-koenig.com/repertoire.html" />
 
 </head>
+  <script>
+  // Mobile menu toggler
+  (function () {
+    function openMenu(nav, btn) {
+      nav.classList.remove('hidden');
+      nav.classList.add(
+        // mobile layout
+        'flex','flex-col','absolute','right-4','top-[64px]',
+        'bg-white','border','rounded-xl','p-4','shadow-lg','gap-4'
+      );
+      btn.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu(nav, btn) {
+      nav.classList.add('hidden');
+      nav.classList.remove(
+        'flex','flex-col','absolute','right-4','top-[64px]',
+        'bg-white','border','rounded-xl','p-4','shadow-lg','gap-4'
+      );
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    window.toggleMenu = function () {
+      const nav = document.getElementById('mainnav');
+      const btn = document.getElementById('menuBtn');
+      if (!nav || !btn) return;
+      const isHidden = nav.classList.contains('hidden');
+      if (isHidden) openMenu(nav, btn); else closeMenu(nav, btn);
+    };
+  })();
+</script>
+
 <body class="font-[Inter] text-zinc-800 bg-zinc-50">
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
   <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
